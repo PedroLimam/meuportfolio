@@ -1,0 +1,533 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-color: #212226;
+    font-family: 'Mada', sans-serif;
+}
+
+:root{
+    --menu-height: 75px;
+    --roxo-color: #5280E2;
+    --branco-parag: #f0efeb;
+}
+
+h1{
+    font-size: 40px;
+    color: rgb(58, 79, 204);
+
+}
+
+h2, h3{font-size: 22px;
+    color: #f1faee;
+}
+
+p{
+    color: var(--branco-parag);
+}
+
+.titlesection{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+.inicio{
+    height: calc(100vh - var(--menu-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.inicio .container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 100px;
+    
+}
+
+.inicio .container .mylogo{
+    display: none;
+    color: aliceblue;
+    width: fit-content;
+    border-bottom: var(--roxo-color) 2px solid;
+}
+
+.inicio p{
+    font-size: 18px;
+}
+
+button{
+    border: 0;
+    border-style: none;
+    width: 235px;
+    height: 50px;
+    background-color: var(--roxo-color);
+    color: aliceblue;
+    font-family: inherit;
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 18px;
+    transition: all 400ms;
+}
+
+button:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.inicio button {
+    margin-top: 40px;
+}
+
+
+nav{
+    height: var(--menu-height);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul a {
+    font-size: 25px;
+    color: var(--roxo-color);
+    text-decoration: none;
+}
+
+nav ul a svg{
+    display: none;
+}
+
+nav .mylogo{
+    font-size: 18px;
+    color: aliceblue;
+    width: fit-content;
+    border-bottom: var(--roxo-color) 2px solid;
+}
+
+
+.habilidades{
+    text-align: center;
+    margin: 150px 0 50px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.habilidades .containerhabilidades{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+.habilidades .titlesection{
+    padding-top: 100px;
+}
+
+.habilidades .titlehabil{
+    font-size: 25px;
+    color: #fff;
+}
+
+progress{
+    border: 1px #43aa8b  solid;
+    
+}
+
+progress::-webkit-progress-value{
+    background-color: #ffd166;
+}
+
+progress::-webkit-progress-bar{
+    background-color: #fff0f3;
+
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+}
+
+.item .iconprogress{
+    margin-right:  5px;
+}
+
+.item .boxprogress{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.habilidades .item .boxprogress h2{
+    margin: 3px 0;
+}
+
+.descricaoleft, .descricaoright{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.services {
+    text-align: center;
+    margin: 50px 0;
+    padding: 0 100px;
+}
+
+.services .titlesection{
+    padding-top: 100px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 50px 0;
+}
+
+.services .services-container .service-card {
+    max-width: 360px;
+    background: #2F3034;
+    border: 1px solid  var(--roxo-color);
+    border-radius: 16px;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.services .services-container .service-card img {
+    margin-bottom: 10px;
+    width: 90px;
+    border-bottom: 1px solid  var(--roxo-color);
+}
+
+.service-card + .service-card {
+    margin-left: 10px;
+}
+
+.services .services-container .service-card h2 {
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+}
+
+.services .services-container .service-card p{
+    margin: 10px 0;
+}
+
+
+
+
+.projetos{
+    text-align: center;
+    margin: 150px 0 100px;
+    padding: 0 100px;
+    background-image:url('bg.png'); 
+    background-size: cover;
+    object-fit: cover;   
+    height: 800px;
+    width: 100vw;
+}
+
+.projetos .titlesection{
+    padding-top: 100px;
+}
+
+.projetos .cardsprojetos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 150px 0;
+    gap: 25px;
+}
+
+.projetos .cardsprojetos .cardprojetos{
+    border: var(--roxo-color) solid 1px;
+    border-radius: 15px;
+    max-width: 300px;
+    max-height: 300px;
+    padding: 10px;
+    text-align: left;
+}
+
+.projetos .cardsprojetos .cardprojetos ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 5px;
+}
+
+.projetos .cardsprojetos .cardprojetos ul li{
+    color: white;
+    border: 1px solid var(--roxo-color);
+    border-radius: 16px;
+    padding: 3px 15px;
+}
+
+.projetos .cardsprojetos .cardprojetos .imgprojeto{
+    background: linear-gradient(30deg, var(--roxo-color),rgb(71, 68, 68));
+    margin: 10px;
+    border: solid 1px var(--roxo-color);
+    border-radius: 15px;
+    text-align: center;    
+}
+
+.projetos .cardsprojetos .cardprojetos .imgprojeto h3{
+    font-weight: 300;
+}
+
+
+
+.redes{
+    height: 70vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0 100px;
+}
+
+
+.redes .iconredes{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+
+}
+
+.redes p{
+    font-size: 20px;
+    color: rgb(238, 230, 220);
+}
+.redes .iconredes .icon{
+    transition: all 400ms;
+}
+
+.redes .iconredes .icon:hover{transform: scale(1.1);}
+
+
+
+
+/* RESPONSIVIDADE */
+
+/* small desktop*/
+
+@media (max-width:1000px) {
+    
+    nav ul a {
+        font-size: 19px;
+    }
+
+    .inicio .container{
+        width: 100%;
+    }
+
+    .services .services-container{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .services .services-container .service-card{
+        margin-left: 0;
+    }
+
+    .redes{
+        padding: 0 100px;
+    }
+
+    .projetos .cardsprojetos{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 35px;
+        padding: 0;
+
+    }
+
+    .projetos{
+        padding: 0;
+        height: 100%;
+    }
+
+    .projetos .cards{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .projetos .cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .projetos .cards .card{
+        width: 355px;
+    }
+}
+
+
+
+
+/* tablet*/
+
+@media (max-width: 767px) {
+    
+    nav {
+        height: 70px;
+        padding: 0 20px;
+        
+    }
+
+    
+    nav .mylogo {
+        display: none;
+    }
+
+    .inicio .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+       
+    }
+
+    h1{
+        font-size: 25px;
+    }
+  
+    .inicio .container .mylogo {
+        display: block;
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+    
+    .projetos{
+        padding: 0;
+    }
+}
+
+
+
+/* Celular */
+
+@media (max-width: 480px) {
+
+    .inicio .container{
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+        
+    }
+
+    nav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        top: unset;
+        height: 75px;
+        height: 84px;
+    
+    }
+
+    nav ul a {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    nav ul a svg {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .redes{
+        height: 100vh;
+        padding: 0 50px;
+    }
+    
+
+    .redes .iconredes{
+        padding-bottom: 30px;
+        padding-top: 0;
+    }
+
+    .services .services-container .service-card{
+ 
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .services{
+        padding: 0 50px;
+    }
+
+    .services .titlesection{
+        padding-top: 50px;
+    }
+
+    .projetos .cardsprojetos{
+        gap: 10px;
+    }
+
+    .projetos .titlesection{
+        padding-top: 50px;
+    }
+
+    .habilidades .containerhabilidades{
+        flex-wrap: wrap;
+        gap: 35px;
+        margin-top: 25px;
+    }
+
+    .habilidades .titlesection{
+        padding-top: 50px;
+    }
+}
+
+
+
