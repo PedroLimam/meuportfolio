@@ -449,6 +449,12 @@ progress::-webkit-progress-bar{
     .projetos{
         padding: 0;
     }
+
+    .services .services-container{
+        gap: 45px;
+    }
+
+    
 }
 
 
@@ -495,6 +501,10 @@ progress::-webkit-progress-bar{
         padding-top: 0;
     }
 
+    .services{
+        padding: 0 50px;
+    }
+
     .services .services-container .service-card{
  
         align-items: center;
@@ -502,16 +512,18 @@ progress::-webkit-progress-bar{
         padding: 0;
     }
 
-    .services{
-        padding: 0 50px;
-    }
-
+    
     .services .titlesection{
         padding-top: 50px;
     }
 
+    .services .services-container .service-card img{
+        padding-top: 15px;
+    }
+
+
     .projetos .cardsprojetos{
-        gap: 10px;
+        gap: 45px;
     }
 
     .projetos .titlesection{
@@ -525,7 +537,7 @@ progress::-webkit-progress-bar{
     }
 
     .habilidades .titlesection{
-        padding-top: 50px;
+        padding: 50px 0 20px;
     }
 }
 
