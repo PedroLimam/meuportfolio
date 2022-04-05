@@ -107,6 +107,7 @@ nav{
     padding: 0px 100px;
     position: sticky;
     top: 0;
+    background-color: #212226;
 }
 
 nav ul{
@@ -303,9 +304,7 @@ progress::-webkit-progress-bar{
 }
 
 .projetos .cardsprojetos .cardprojetos .imgprojeto{
-    background: linear-gradient(30deg, var(--roxo-color),rgb(71, 68, 68));
     margin: 10px;
-    border: solid 1px var(--roxo-color);
     border-radius: 15px;
     text-align: center;    
 }
